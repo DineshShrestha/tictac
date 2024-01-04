@@ -2,7 +2,7 @@ defmodule Square do
   @enforce_keys [:row, :col]
 
   defstruct [:row, :col]
-  def new(col, row) when col in 1..2 and row in 1..3 do
+  def new(col, row) when col in 1..3 and row in 1..3 do
     {:ok, %Square{row: row, col: col}}
   end
 
